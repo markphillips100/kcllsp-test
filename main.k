@@ -1,6 +1,10 @@
-import configschemas
+import resources
 
-_externalResourceName = lambda prefix: str, cfg: configschemas.ConfigSchema -> str {
-    name = "{}-{}".format(prefix, cfg.id)
-    name
-}
+# Compose all resource collections
+_items = [
+    *resources.mapsResources
+]
+
+# An empty resource variable means the object was not assigned due to not being ready yet.
+# We must ensure the items only contains non-None resource variables.
+items = [v for _, v in _items if v != None]

@@ -1,0 +1,3 @@
+import .contributorAssignees
+
+mapsResources = []

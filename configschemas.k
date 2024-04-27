@@ -1,2 +1,0 @@
-schema ConfigSchema:
-    id: str
