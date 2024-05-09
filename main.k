@@ -2,7 +2,8 @@ import resources
 
 # Compose all resource collections
 _items = [
-    *resources.mapsResources
+    resources.resourceGroup,
+    *resources.notificationResources
 ]
 
 # An empty resource variable means the object was not assigned due to not being ready yet.
